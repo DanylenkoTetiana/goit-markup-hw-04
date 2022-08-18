@@ -1,0 +1,365 @@
+:root {
+  --praimery-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --titel-text-color: #212121;
+  --accent-color: #2196f3;
+  --praimery-bkg-color: FFFFFF;
+  --secondary-bkg-color: #2f303a;
+}
+body {
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  color: var(--praimery-text-color);
+  background-color: var(--praimery-bkg-color);
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /*outline: 2px solid tomato;*/
+}
+img {
+  display: block;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*Шапка*/
+.header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  border-bottom: 1px solid #ececec;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.logo span {
+  color: #000000;
+}
+.logo:hover,
+.logo:focus {
+  text-decoration: underline var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  letter-spacing: 0.02em;
+  color: var(--titel-text-color);
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-list .link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  letter-spacing: 0.02em;
+  color: var(--praimery-text-color);
+}
+
+/*Герой*/
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+  background-color: var(--secondary-bkg-color);
+}
+
+.hero-title {
+  margin: 0 auto 30px;
+  max-width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  min-width: 216px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* 
+height: 50px;
+left: 692px;
+top: 430px;
+
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ */
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--titel-text-color);
+}
+/*Переваги компанії*/
+.benefits {
+}
+.benefits-list {
+  display: flex;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: inherit;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
+}
+.benefit {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: inherit;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*Чим займається компанія*/
+
+.activity {
+  padding-top: 0px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
+}
+.activity-list {
+  display: flex;
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*Команда*/
+
+.team {
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  max-width: 270px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-employee {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
+}
+.position {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*Футер*/
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0;
+
+  background-color: var(--secondary-bkg-color);
+}
+.address {
+  max-width: 231px;
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.link[rel='noopener noreferrer'] {
+  color: var(--secondary-text-color);
+}
+.footer span {
+  color: var(--secondary-text-color);
+}
+.link:hover,
+.link:focus,
+.link.highlighted {
+  color: var(--accent-color);
+}
+/*Проєкти*/
+
+.category-list {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+.category-button {
+  padding: 6px 25px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--titel-text-color);
+  background-color: #f5f4fa;
+}
+.category-item:not(:last-child) {
+  margin-right: 8px;
+}
+.category-button:hover,
+.category-button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.signature-card {
+  max-width: 370px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.project {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--titel-text-color);
+}
+.projects-category {
+  margin: 0;
+
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}

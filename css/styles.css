@@ -98,10 +98,10 @@ img {
   align-items: center;
   gap: 10px;
 }
-.header-item > .icons {
+.header-item > .icon {
   fill: currentColor;
 }
-.header-item:hover .icons {
+.header-item:hover .icon {
   fill: var(--accent-color);
 }
 
@@ -173,10 +173,6 @@ img {
   background-color: var(--accent-color);
   text-align: center;
   letter-spacing: 0.06em;
-  /*
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- */
 }
 
 .hero-button:hover,
@@ -186,10 +182,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /*Переваги компанії*/
 .benefits {
 }
-.benefits-list {
-  display: flex;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -203,23 +195,24 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: -1px;
 }
 
+.benefits-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
 .benefits-item {
   width: 270px;
 }
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-/*.benefits-item::before {
-  content: '';
-  display: block;
+.benefits-icons {
+  display: flex;
   height: 120px;
   margin-bottom: 30px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+  background: #f5f4fa;
   border-radius: 4px;
-}*/
+}
 
 .benefits-title {
   margin-top: 0;
@@ -271,6 +264,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .team-list {
   display: flex;
+  gap: 30px;
 }
 .team-item {
   max-width: 270px;
@@ -280,16 +274,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-/*.team-item::after {
-  display: block;
-  content: '';
-  width: 44px;
-  height: 44px;
-  margin-bottom: 30px;
-}*/
+
 .team-employee {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -309,7 +294,26 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.social-networks {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  gap: 10px;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.social-networks-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-networks-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*Футер*/
 
 .footer {

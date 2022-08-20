@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --praimery-bkg-color: FFFFFF;
   --secondary-bkg-color: #2f303a;
+  --praimery-icon-color: #afb1b8;
 }
 body {
   font-family: Roboto, Verdana, Tahoma, sans-serif;
@@ -34,6 +35,9 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.link .icon {
+  fill: var(--praimery-icon-color);
 }
 
 /*Шапка*/
@@ -91,38 +95,18 @@ img {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.header-list .link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
   color: var(--praimery-text-color);
 }
-.header-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.header-item > .icon {
+.header-list .icon {
   fill: currentColor;
 }
-.header-item:hover .icon {
-  fill: var(--accent-color);
-}
-
-.header-list .link {
-  margin-top: 32px;
-  margin-bottom: 32px;
-
-  letter-spacing: 0.02em;
-  color: currentColor;
-}
-
-/*.header-item > .link::before {
-  display: inline-block;
-  content: '';
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-color: var(--praimery-bkg-color);
-  background-size: contain;
-  background-image - якщо картинка одна для усіх посилань. Якщо різні - то окремими псевдоелементами додаємо
-}*/
 
 /*Герой*/
 
@@ -205,11 +189,10 @@ img {
   width: 270px;
 }
 .benefits-icons {
-  display: flex;
   height: 120px;
+  padding: 25px 100px;
   margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
+
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -294,26 +277,55 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.social-networks {
+.social-networks-list {
   display: flex;
   width: 206px;
-  height: 44px;
   gap: 10px;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 }
-.social-networks-item {
+
+.social-networks-list .link {
+  display: block;
   width: 44px;
   height: 44px;
+  padding: 12px;
   border-radius: 50%;
 }
-.social-networks-item .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.social-networks-list .link:hover {
+  background-color: var(--accent-color);
 }
+.social-networks-list .link:hover .icon {
+  fill: #ffffff;
+}
+
+/*Клієнти*/
+
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+.customers-item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--praimery-icon-color);
+
+  border-radius: 4px;
+}
+.customers .icon {
+  fill: var(--praimery-icon-color);
+}
+.customers-item:hover .icon {
+  fill: var(--accent-color);
+}
+.customers-item:hover {
+  border-color: var(--accent-color);
+}
+
 /*Футер*/
 
 .footer {
@@ -345,6 +357,15 @@ img {
 .footer span {
   color: var(--secondary-text-color);
 }
+.social-networks .link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-networks .icon {
+  fill: var(--secondary-text-color);
+}
+
+/* Різне*/
+
 .link:hover,
 .link:focus,
 .link.highlighted {
